@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Gallery</title>
+	<style type="text/css">
+		body{
+			color: #333;
+			background-color: #ccc;
+			margin: 1em 10%;
+		}
+		h1{
+			color: #333;
+			background-color: transparent;
+		}
+		a{
+			color: #c60;
+			background-color: transparent;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		ul{
+			padding: 0;
+		}
+		li{
+			float: left;
+			padding: 1em;
+			list-style: none;
+			display: inline;
+		}
+		#imagegallery{
+			list-style: none;
+		}
+		img{
+			height: 100px;
+			width: 100px;
+		}
+		#placeholder{
+			width: 300px;
+			height: 300px;
+			background-color: #fff;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Snapshots</h1>
+	<ul id="imagegallery">
+		<li>
+			<a href="images/1.jpg" title="a">
+				<img src="images/1.jpg" alt="a">
+			</a>
+		</li>
+		<li>
+			<a href="images/2.jpg" title="b">
+				<img src="images/2.jpg" alt="b">
+			</a>
+		</li>
+		<li>
+			<a href="images/3.jpg" title="c">
+				<img src="images/3.jpg" alt="c">
+			</a>
+		</li>
+		<li>
+			<a href="images/4.jpg" title="d">
+				<img src="images/4.jpg" alt="d">
+			</a>
+		</li>
+	</ul>
+	<div style="clear: both;"></div>
+	<img id="placeholder" src="images/1.jpg" alt="my image gallery">
+	<p id="description">choose a picture</p>
+	<script type="text/javascript" src="showpic.js"></script>
+</body>
+</html>
